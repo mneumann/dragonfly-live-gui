@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=WiFi Networks Manager
+GenericName=Networks Manager
+Comment=Connect to WiFi Networks
+Exec=wifimgr %u
+Icon=wifimgr
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Network;System;
+MimeType=
+X-XFCE-Source=file:///usr/local/share/applications/wifimgr.desktop
