@@ -5,6 +5,7 @@ IMGFILE=/home/mneumann/obj/live.img
 IMGMNT=/home/mneumann/obj/mnt
 IMGUSBDEV=da8
 
+ROOTSKEL=`pwd`/skel
 NCPUS=`sysctl -n hw.ncpu`
 GITHOST_DPORTS=mirror-master.dragonflybsd.org
 GITHOST=git.dragonflybsd.org

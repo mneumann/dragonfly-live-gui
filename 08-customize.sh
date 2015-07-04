@@ -9,7 +9,8 @@ mtree -deU -f ${SRCDIR}/etc/mtree/BSD.var.dist -p ${DESTDIR}/var
 dev_mkdb -f ${DESTDIR}/var/run/dev.db ${DESTDIR}/dev
 
 # Install root skeletons
-cpdup -X cpignore -o ${SRCDIR}/nrelease/root ${DESTDIR}
+cpdup -X cpignore -o ${ROOTSKEL} ${DESTDIR}
+((cd ${ROOTSKEL} && find .) | fgrep -v cpignore | (cd ${DESTDIR} && xargs chown root:wheel))
 
 # Setup password
 pwd_mkdb -p -d ${DESTDIR}/etc ${DESTDIR}/etc/master.passwd
