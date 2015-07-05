@@ -1,3 +1,4 @@
-display_label=false
-display_icon=false
-display_pow
+display_type=0
+display_textsize=2
+group_policy=0
+
